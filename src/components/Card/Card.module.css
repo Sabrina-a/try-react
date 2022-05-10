@@ -1,0 +1,22 @@
+.table {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid brown;
+}
+.tableTr {
+  padding: 15px;
+}
+.deleteBtn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(255, 0, 0, 0.816); */
+}

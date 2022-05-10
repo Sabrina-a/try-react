@@ -1,0 +1,22 @@
+import React, { useState } from "react";
+import styles from "./Filter.module.css";
+const Filter = ({ filteration }) => {
+  const [filter, setFilter] = useState("");
+  const filterHandler = (e) => {
+    const name = e.target.value;
+    setFilter(name);
+    console.log(filter);
+    filteration(name);
+  };
+  return (
+    <div style={{ margin: "20px" }}>
+      <input
+        type="text"
+        placeholder="Filter by name"
+        value={filter}
+        onChange={filterHandler}
+      />
+    </div>
+  );
+};
+export default Filter;
